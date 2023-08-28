@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -11,7 +11,7 @@ s<!DOCTYPE html>
         $(document).ready(function(){
            $('#reset').click(function(){
               console.log('click')
-		$.post( "http://www.lacorolla.com.es/logshelly/" ),
+		$.get( "http://www.lacorolla.com.es/logshelly/" ),
                function(data, status){
                    if(status!="success"){
                        alert("Parece que algo va mal, contacte con la propiedad. Something seems to go wrong. Call the property owner");
