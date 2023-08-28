@@ -10,8 +10,14 @@
     <script>
         $(document).ready(function(){
            $('#reset').click(function(){
-              console.log('click')
-		$.get( "http://www.lacorolla.com.es/logshelly/" ),
+	      console.log('click')
+               $.post("https://lacorolla.com.es/logshelly",
+                        {
+                        channel:"0",
+                        turn:"on",
+                        id:"441793a406e0",
+                        auth_key:"MTdlZDdhdWlk657371AE811D4EF772FDE104C2557FE8F9DE85DE5E00C0E416CB60F1035C14F99176C3AD547C7683"
+                        },
                function(data, status){
                    if(status!="success"){
                        alert("Parece que algo va mal, contacte con la propiedad. Something seems to go wrong. Call the property owner");
