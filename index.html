@@ -11,7 +11,7 @@
         $(document).ready(function(){
            $('#reset').click(function(){
               console.log('click')
-		$.get( "http://www.lacorolla.com.es/logshelly/", { pin: "Apartamento" } );
+		$.get( "http://www.lacorolla.com.es/logshelly/" );
                function(data, status){
                    if(status!="success"){
                        alert("Parece que algo va mal, contacte con la propiedad. Something seems to go wrong. Call the property owner");
