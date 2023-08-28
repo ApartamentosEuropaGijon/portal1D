@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
 	
-    <title>Portal Apartamento Plaza Europa</title>
+    <title>P2ortal Apartamento Plaza Europa</title>
     <link rel="stylesheet" type="text/css" href="/examples/css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function(){
            $('#reset').click(function(){
               console.log('click')
-               $.post("https://www.lacorolla.com.es",
+               $.post("https://www.lacorolla.com.es/logshelly/",
                         {
                         channel:"0",
                         turn:"on",
@@ -21,7 +21,9 @@
                function(data, status){
                    if(status!="success"){
                        alert("Parece que algo va mal, contacte con la propiedad. Something seems to go wrong. Call the property owner");
-                   }
+                   } else {
+			   alert("Bien");
+		   }
                      });
 		   	alert("termina")
                }); 		
