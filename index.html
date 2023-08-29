@@ -9,7 +9,7 @@
     <script>
         $(document).ready(function(){
 		alert("inicio")
-     fetch('https://www.lacorolla.com.es/logshelly')
+     fetch('https://www.lacorolla.com.es/logshelly', { mode: 'no-cors'})
        // Exito
        .then(response => response.json())  // convertir a json
        .then(json => console.log(json))    //imprimir los datos en la consola
