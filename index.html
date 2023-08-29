@@ -10,10 +10,7 @@
         $(document).ready(function(){
            $('#reset').click(function(){
               console.log('click')
-               $.post("https://www.lacorolla.com.es/logshelly",
-                        {
-                        pin:"Apartamento"
-                        });
+		   fetch('https://www.lacorolla.com.es/logshelly', { mode: 'no-cors'})
                });
         });
     </script>
